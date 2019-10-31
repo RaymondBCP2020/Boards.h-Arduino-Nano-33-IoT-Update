@@ -1,3 +1,6 @@
+//Insert your wifi network name in line 156
+//Insert your wifi password in line 188
+
 /*==============================================================================
  * WIFI CONFIGURATION
  *
@@ -28,7 +31,7 @@
  * the library manager via: Arduino IDE Menus: Sketch > Include Library > Manage Libraries > filter
  * search for "WiFi101" > Select the result and click 'install'
  */
-//#define WIFININI
+//#define WIFI101
 
 //do not modify the following 11 lines
 #if defined(ARDUINO_SAMD_MKR1000) && !defined(WIFI_101)
@@ -150,7 +153,7 @@
 
 // STEP 3 [REQUIRED for all boards and shields]
 // replace this with your wireless network SSID
-char ssid[] = "🦔";
+char ssid[] = "your-wifi-network-name";
 
 
 // STEP 4 [OPTIONAL for all boards and shields]
@@ -182,7 +185,7 @@ char ssid[] = "🦔";
 #define WIFI_WPA_SECURITY
 
 #ifdef WIFI_WPA_SECURITY
-char wpa_passphrase[] = "mysticalcorgis314";
+char wpa_passphrase[] = "your-wifi-password"; //if no password, leave blank
 #endif  //WIFI_WPA_SECURITY
 
 
